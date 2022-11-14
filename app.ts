@@ -9,8 +9,14 @@ const REPO = 'github.com/southernMD/wwww.git';
 const remote = `https://${USER}:${PASS}@${REPO}`;
 
 
-git.init().
+try {
+    git.init().
     add('./*').
     commit('hhhh').
     addRemote('origin', remote).
     push('origin', 'main')
+} catch (error) {
+    console.log(error);
+}
+
+
