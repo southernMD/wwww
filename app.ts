@@ -14,7 +14,7 @@ try {
     add('./*').
     commit('hhhh').
     addRemote('origin', remote).
-    push('origin', 'main')
+    push(['-u', 'origin', 'main'], () => console.log('done'));
 } catch (error) {
     console.log(error);
 }
