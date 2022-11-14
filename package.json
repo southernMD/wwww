@@ -1,0 +1,11 @@
+{
+  "name": "ss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/southernMD/wwww.git",
+  "author": "southernMD <2483723241@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "simple-git": "^3.15.0"
+  }
+}
