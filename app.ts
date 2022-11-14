@@ -10,10 +10,9 @@ const remote = `https://${USER}:${PASS}@${REPO}`;
 
 
 try {
-    git.init().
+    git.
     add('./*').
-    commit('1').
-    addRemote('origin', remote).
+    commit('2').
     push([remote], () => console.log('done'));
 } catch (error) {
     console.log(error);
